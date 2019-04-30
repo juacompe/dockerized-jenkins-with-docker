@@ -1,5 +1,6 @@
 Jenkins with docker in it
 ====
+[![Build Status](https://travis-ci.org/juacompe/dockerized-jenkins-with-docker.svg?branch=master)](https://travis-ci.org/juacompe/dockerized-jenkins-with-docker)
 
 I don't want to install go in my jenkins container, I decided to use docker to build it so that the Jenkins container does only one thing.
 
