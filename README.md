@@ -3,7 +3,15 @@ Jenkins with docker in it
 
 I don't want to install go in my jenkins container, I decided to use docker to build it so that the Jenkins container does only one thing.
 
-Usage
+Using docker
+===
+
+```
+docker build -t jenkins-with-docker .
+docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /tmp/home:/var/jenkins_home -p 8080:8080 -p 50000:50000 -u root --privileged jenkins-with-docker docker -v
+```
+
+Using docker-compose
 ===
 
 ```
